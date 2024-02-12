@@ -26,8 +26,8 @@ def extract_patches(input_folder, output_folder, patch_size):
                     patch_path = os.path.join(output_folder, patch_filename)
                     cv2.imwrite(patch_path, patch)
 
-input_folder = "/home/sruthi/PycharmProjects/saliency_mmseg/video/images_4k/"
-output_folder = "/home/sruthi/PycharmProjects/saliency_mmseg/video/patches_4k/"
+input_folder = "path_to_images_4k/"   
+output_folder = "path_to_patches_4k/"  #saves in a folder patches_4k: create a folder
 patch_size = 256
 
 extract_patches(input_folder, output_folder, patch_size)
